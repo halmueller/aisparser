@@ -555,7 +555,7 @@ int __stdcall parse_ais_1( ais_state *state, aismsg_1 *result )
     result->longitude    = (long)          get_6bit( &state->six_state, 28 );
     result->latitude     = (long)          get_6bit( &state->six_state, 27 );
     result->cog          = (int)           get_6bit( &state->six_state, 12 );
-    result->true         = (int)           get_6bit( &state->six_state, 9  );
+    result->truehdg      = (int)           get_6bit( &state->six_state, 9  );
     result->utc_sec      = (char)          get_6bit( &state->six_state, 6  );
     result->regional     = (char)          get_6bit( &state->six_state, 4  );
     result->spare        = (char)          get_6bit( &state->six_state, 1  );
@@ -616,7 +616,7 @@ int __stdcall parse_ais_2( ais_state *state, aismsg_2 *result )
     result->longitude    = (long)          get_6bit( &state->six_state, 28 );
     result->latitude     = (long)          get_6bit( &state->six_state, 27 );
     result->cog          = (int)           get_6bit( &state->six_state, 12 );
-    result->true         = (int)           get_6bit( &state->six_state, 9  );
+    result->truehdg      = (int)           get_6bit( &state->six_state, 9  );
     result->utc_sec      = (char)          get_6bit( &state->six_state, 6  );
     result->regional     = (char)          get_6bit( &state->six_state, 4  );
     result->spare        = (char)          get_6bit( &state->six_state, 1  );
@@ -674,7 +674,7 @@ int __stdcall  parse_ais_3( ais_state *state, aismsg_3 *result )
     result->longitude      = (long)          get_6bit( &state->six_state, 28 );
     result->latitude       = (long)          get_6bit( &state->six_state, 27 );
     result->cog            = (int)           get_6bit( &state->six_state, 12 );
-    result->true           = (int)           get_6bit( &state->six_state, 9  );
+    result->truehdg        = (int)           get_6bit( &state->six_state, 9  );
     result->utc_sec        = (char)          get_6bit( &state->six_state, 6  );
     result->regional       = (char)          get_6bit( &state->six_state, 4  );
     result->spare          = (char)          get_6bit( &state->six_state, 1  );
@@ -1568,7 +1568,7 @@ int __stdcall  parse_ais_18( ais_state *state, aismsg_18 *result )
     result->longitude      = (long)          get_6bit( &state->six_state, 28 );
     result->latitude       = (long)          get_6bit( &state->six_state, 27 );
     result->cog            = (int)           get_6bit( &state->six_state, 12 );
-    result->true           = (int)           get_6bit( &state->six_state, 9  );
+    result->truehdg        = (int)           get_6bit( &state->six_state, 9  );
     result->utc_sec        = (char)          get_6bit( &state->six_state, 6  );
     result->regional2      = (char)          get_6bit( &state->six_state, 2  );
     result->unit_flag      = (char)          get_6bit( &state->six_state, 1  );
@@ -1643,7 +1643,7 @@ int __stdcall  parse_ais_19( ais_state *state, aismsg_19 *result )
     result->longitude      = (long)          get_6bit( &state->six_state, 28 );
     result->latitude       = (long)          get_6bit( &state->six_state, 27 );
     result->cog            = (int)           get_6bit( &state->six_state, 12 );
-    result->true           = (int)           get_6bit( &state->six_state, 9  );
+    result->truehdg        = (int)           get_6bit( &state->six_state, 9  );
     result->utc_sec        = (char)          get_6bit( &state->six_state, 6  );
     result->regional2      = (char)          get_6bit( &state->six_state, 4  );
 

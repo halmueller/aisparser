@@ -32,7 +32,7 @@ typedef struct {
     long            longitude;         //!< 28 bits : Longitude in 1/10000 minute
     long            latitude;          //!< 27 bits : Latitude in 1/10000 minute
     int             cog;               //!< 12 bits : Course over Ground
-    int             true;              //!< 9 bits  : True heading
+    int             truehdg;              //!< 9 bits  : True heading
     char            utc_sec;           //!< 6 bits  : UTC Seconds
     char            regional;          //!< 4 bits  : Regional bits
     char            spare;             //!< 1 bit   : Spare
@@ -56,7 +56,7 @@ typedef struct {
     long            longitude;         //!< 28 bits : Longitude in 1/10000 minute
     long            latitude;          //!< 27 bits : Latitude in 1/10000 minute
     int             cog;               //!< 12 bits : Course over Ground
-    int             true;              //!< 9 bits  : True Heading
+    int             truehdg;              //!< 9 bits  : True Heading
     char            utc_sec;           //!< 6 bits  : UTC Seconds
     char            regional;          //!< 4 bits  : Regional bits
     char            spare;             //!< 1 bit   : Spare
@@ -80,7 +80,7 @@ typedef struct {
     long            longitude;         //!< 28 bits : Longitude in 1/10000 minute
     long            latitude;          //!< 27 bits : Latitude in 1/10000 minute
     int             cog;               //!< 12 bits : Course over Ground
-    int             true;              //!< 9 bits  : True Heading
+    int             truehdg;              //!< 9 bits  : True Heading
     char            utc_sec;           //!< 6 bits  : UTC Seconds
     char            regional;          //!< 4 bits  : Regional bits
     char            spare;             //!< 1 bit   : Spare
@@ -374,7 +374,7 @@ typedef struct {
     long            longitude;         //!< 28 bits  : Longitude in 1/10000 minute
     long            latitude;          //!< 27 bits  : Latitude in 1/10000 minute
     int             cog;               //!< 12 bits  : Course Over Ground
-    int             true;              //!< 9 bits   : True Heading
+    int             truehdg;              //!< 9 bits   : True Heading
     char            utc_sec;           //!< 6 bits   : UTC Seconds
     char            regional2;         //!< 2 bits   : Regional Bits
     char            unit_flag;         //!< 1 bit    : Class B CS Flag
@@ -411,7 +411,7 @@ typedef struct {
     long            longitude;         //!< 28 bits  : Longitude in 1/10000 minute
     long            latitude;          //!< 27 bits  : Latitude in 1/10000 minute
     int             cog;               //!< 12 bits  : Course Over Ground
-    int             true;              //!< 9 bits   : True Heading
+    int             truehdg;              //!< 9 bits   : True Heading
     char            utc_sec;           //!< 6 bits   : UTC Seconds
     char            regional2;         //!< 4 bits   : Regional Bits
     char            name[21];          //!< 120 bits : Ship Name in ASCII
